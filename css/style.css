@@ -21,17 +21,19 @@ a {
   display: block; }
 
 .banner-logo {
-  height: 66px;
+  height: 50px;
+  width: auto;
   display: block;
   margin: auto; }
 
 .move-title {
-  font-size: 56px;
+  font-size: 38px;
   color: #ffffff;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 10px; }
 
 .move-desc {
-  font-size: 20px;
+  font-size: 14px;
   color: #ffffff;
   text-align: center; }
 
@@ -43,13 +45,15 @@ a {
 
 .move-down-a {
   display: block;
-  font-size: 28px;
+  font-size: 30px;
   margin: auto;
   padding: 0;
   width: 300px;
   height: 60px;
   border-radius: 30px;
-  background: #ffffff; }
+  background: #ffffff;
+  line-height: 60px;
+  vertical-align: center; }
 
 .wording {
   position: absolute;
@@ -68,30 +72,37 @@ li {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 15px;
   padding-bottom: 5px;
   margin-left: 10px;
   margin-right: 10px; }
 
 .h-inner {
-  display: flex;
-  flex-direction: row; }
+  width: 900px;
+  height: 40px;
+  margin: 0 auto; }
+  .h-inner .nav {
+    text-align: center; }
   .h-inner ul {
     height: 54px;
-    display: block;
-    width: 100%;
-    margin-left: 20px; }
+    display: inline-block;
+    width: 100%; }
+  .h-inner a:link {
+    color: white; }
+  .h-inner .active-border {
+    padding: 15px 10px 5px 10px; }
+    .h-inner .active-border .active {
+      border-bottom: 4px solid #ffffff; }
+    .h-inner .active-border:hover {
+      background: rgba(0, 0, 0, 0.1); }
 
 h1 {
   position: absolute;
   margin-top: 10px;
   left: 20%; }
 
-.nav {
-  position: absolute;
-  left: 40%; }
-
-li:hover {
-  background: rgba(0, 0, 0, 0.1); }
+.logo {
+  float: left; }
+  .logo img {
+    height: 32px; }
 
 /*# sourceMappingURL=style.css.map */

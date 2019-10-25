@@ -30,19 +30,21 @@ a {
 }
 
 .banner-logo {
-  height: 66px;
+  height: 50px;
+  width: auto;
   display: block;
   margin: auto;
 }
 
 .move-title {
-  font-size: 56px;
+  font-size: 38px;
   color: #ffffff;
   text-align: $text-align;
+  margin-bottom: 10px;
 }
 
 .move-desc {
-  font-size: 20px;
+  font-size: 14px;
   color: #ffffff;
   text-align: $text-align;
 }
@@ -58,13 +60,15 @@ a {
 
 .move-down-a {
   display: block;
-  font-size: 28px;
+  font-size: 30px;
   margin: auto;
   padding: 0;
   width: 300px;
   height: 60px;
   border-radius: 30px;
   background: #ffffff;
+  line-height: 60px;
+  vertical-align: center;
 
 }
 
@@ -89,7 +93,6 @@ li {
   padding: {
     left: 10px;
     right: 10px;
-    top: 15px;
     bottom: 5px;
   };
   margin: {
@@ -97,20 +100,32 @@ li {
     right: 10px;
   };
 
-  &:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
 }
 
 .h-inner {
-  display: flex;
-  flex-direction: row;
-
+  width: 900px;
+  height: 40px;
+  margin: 0 auto;
+  .nav {
+    text-align: center;
+  }
   ul {
     height: 54px;
-    display: block;
+    display: inline-block;
     width: 100%;
-    margin-left: 20px;
+  }
+  a:link{
+    color: white;
+  }
+  .active-border {
+    padding: 15px 10px 5px 10px;
+    .active {
+      border-bottom: 4px solid #ffffff;
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
   }
 }
 
@@ -120,7 +135,10 @@ h1 {
   left: 20%;
 }
 
-.nav {
-  position: absolute;
-  left: 40%;
+
+.logo {
+  float: left;
+  img {
+    height: 32px;
+  }
 }
